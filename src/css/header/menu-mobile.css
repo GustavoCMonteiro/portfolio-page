@@ -1,0 +1,154 @@
+[data-menu="button"] {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .menu-button.hidden.fullbutton {
+    display: block;
+    background-color: var(--color-primary);
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border: 3px solid var(--shadow-black);
+    box-shadow: 5px 5px var(--shadow-black);
+    top: -5px;
+  }
+
+  .menu-button.hidden.fullbutton::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 5px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 13px var(--shadow-black), 0 -13px var(--shadow-black);
+    animation: menuMobileBack 0.5s forwards;
+  }
+
+  .menu-button.hidden {
+    display: block;
+    background-color: var(--color-primary);
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border: 3px solid var(--shadow-black);
+    box-shadow: 5px 5px var(--shadow-black);
+    top: -5px;
+  }
+
+  .menu-button.hidden::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 5px;
+    width: 40px;
+    right: 7px;
+    top: 25px;
+    background-color: var(--shadow-black);
+    animation: menuMobile4 1s forwards;
+  }
+
+  .menu-button.hidden::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 5px;
+    width: 40px;
+    right: 7px;
+    top: 25px;
+    background-color: var(--shadow-black);
+    animation: menuMobile3 1s forwards;
+  }
+
+  .menu-button.visible {
+    display: block;
+    background-color: var(--color-primary);
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border: 3px solid var(--shadow-black);
+    box-shadow: 5px 5px var(--shadow-black);
+    top: -5px;
+  }
+
+  .menu-button.visible::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 5px;
+    width: 40px;
+    right: 7px;
+    top: 25px;
+    background-color: var(--shadow-black);
+    animation: menuMobile1 1s forwards;
+  }
+
+  .menu-button.visible::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 5px;
+    width: 40px;
+    right: 7px;
+    top: 25px;
+    background-color: var(--shadow-black);
+    animation: menuMobile2 1s forwards;
+  }
+}
+
+@keyframes menuMobile1 {
+  from {
+    transform: rotate(0);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(225deg);
+    opacity: 1;
+  }
+}
+
+@keyframes menuMobile2 {
+  from {
+    transform: rotate(0);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(-225deg);
+    opacity: 1;
+  }
+}
+
+@keyframes menuMobile3 {
+  from {
+    transform: rotate(-225deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes menuMobile4 {
+  from {
+    transform: rotate(225deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes menuMobileBack {
+  from {
+    transform: rotate(-10deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}

@@ -55,11 +55,13 @@
   content: url(../../img/icon/cv.png);
 }
 
-.sobre__redes-linkedin:hover,
-.sobre__redes-github:hover,
-.sobre__redes-cv:hover {
-  background-color: var(--color-secondary);
-  color: var(--text-color-dark);
+@media (min-width: 1100px) {
+  .sobre__redes-linkedin:hover,
+  .sobre__redes-github:hover,
+  .sobre__redes-cv:hover {
+    background-color: var(--color-secondary);
+    color: var(--text-color-dark);
+  }
 }
 
 @media (max-width: 1100px) {

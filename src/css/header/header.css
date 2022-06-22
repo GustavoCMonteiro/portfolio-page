@@ -1,7 +1,5 @@
 .header__img {
   background-color: var(--color-secondary);
-  height: 6rem;
-  clip-path: ellipse(90% 100% at 30% 0%);
 }
 
 .header {
@@ -26,41 +24,75 @@
   gap: 2rem;
 }
 
-.header__nav-lista a {
-  transition: 0.3s;
-  position: relative;
+@media (min-width: 1100px) {
+  .header__nav-lista a {
+    transition: 0.3s;
+    position: relative;
+  }
+  .header__nav-lista a::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: var(--shadow-black);
+    right: 50%;
+    margin-top: 2px;
+    transition: 0.4s;
+    position: absolute;
+  }
+
+  .header__nav-lista a:hover::after {
+    width: 50%;
+  }
+
+  .header__nav-lista a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: var(--shadow-black);
+    top: 39px;
+    left: 50%;
+    transition: 0.4s;
+    position: absolute;
+  }
+
+  .header__nav-lista a:hover::before {
+    width: 50%;
+  }
 }
 
-.header__nav-lista a::after {
-  content: "";
-  display: block;
-  height: 5px;
-  width: 0%;
-  background-color: var(--shadow-black);
-  right: 50%;
-  margin-top: 2px;
-  transition: 0.4s;
-  position: absolute;
+@media (max-width: 1100px) {
+  .header {
+    position: relative;
+  }
+
+  .header__nav-lista {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    background-color: var(--color-secondary);
+    z-index: 2;
+    padding: 1rem;
+  }
+
+  .header__nav-lista li + li {
+    margin-top: 1rem;
+  }
+
+  .hidden {
+    display: none;
+  }
 }
 
-.header__nav-lista a:hover::after {
-  width: 50%;
+@media (max-width: 480px) {
+  .header__logo-logo {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+  .header__logo {
+    height: 80px;
+    width: 150px;
+  }
 }
-
-.header__nav-lista a::before {
-  content: "";
-  display: block;
-  height: 5px;
-  width: 0%;
-  background-color: var(--shadow-black);
-  top: 39px;
-  left: 50%;
-  transition: 0.4s;
-  position: absolute;
-}
-
-.header__nav-lista a:hover::before {
-  width: 50%;
-}
-
-

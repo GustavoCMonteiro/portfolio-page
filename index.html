@@ -23,11 +23,12 @@
         <h1 class="header__logo-logo font-size-l">GM</h1>
       </div>
       <nav class="header__nav">
-        <ul class="header__nav-lista">
+        <button class="menu-button hidden fullbutton" data-menu="button"></button>
+        <ul class="header__nav-lista hidden" data-menu="list">
           <li class="font-size-s text-color-dark"><a href="#about">About</a></li>
           <li class="font-size-s text-color-dark"><a href="#skills">Skills</a></li>
           <li class="font-size-s text-color-dark"><a href="#work">Work</a></li>
-          <li class="font-size-s text-color-dark"><a href="">Contact</a></li>
+          <li class="font-size-s text-color-dark"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -45,7 +46,7 @@
       </div>
     </section>
 
-    <section class="sobre container-geral">
+    <section class="sobre container-geral" id="about">
       <h2 class="sobre__titulo font-size-l">About</h2>
       <div class="sobre__div-flex">
         <div class="sobre__texto font-size-x">
@@ -63,7 +64,7 @@
       </div>
     </section>
 
-    <section class="skills container-geral">
+    <section class="skills container-geral" id="skills">
       <h2 class="skills__titulo font-size-l">Skills</h2>
       <div class="skills__flex-div">
         <div class="skills__skill border-shadow">
@@ -93,7 +94,7 @@
       </div>
     </section>
 
-    <section class="work">
+    <section class="work" id="work">
       <div class="container-geral">
         <h2 class="work__titulo font-size-l">Work</h2>
 
@@ -182,7 +183,7 @@
 
     </section>
 
-    <section class="contato container-geral">
+    <section class="contato container-geral" id="contact">
       <h2 class="contato__titulo font-size-l">Contact</h2>
       <p class="contato__text font-size-x">Preencha o formulário abaixo que entrarei em contato.</p>
       <form action="" class="contato__form">
@@ -204,13 +205,13 @@
         </div>
       </form>
     </section>
-
-    <footer class="footer">
-      <p class="footer__text font-size-s text-color-dark">Site Criado por Gustavo Monteiro</p>
-    </footer>
   </main>
 
+  <footer class="footer">
+    <p class="footer__text font-size-s text-color-dark">Site Criado por Gustavo Monteiro</p>
+  </footer>
 
+  <script type="module" src="./src/script/script.js"></script>
 </body>
 
 </html>
