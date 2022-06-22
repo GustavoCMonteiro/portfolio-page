@@ -24,7 +24,7 @@
     width: 40px;
     background-color: rgba(0, 0, 0, 0);
     box-shadow: 0 13px var(--shadow-black), 0 -13px var(--shadow-black);
-    animation: menuMobileBack 0.5s forwards;
+    animation: menuMobileBack 1.5s forwards;
   }
 
   .menu-button.hidden {
@@ -144,7 +144,7 @@
 
 @keyframes menuMobileBack {
   from {
-    transform: rotate(-10deg);
+    transform: rotate(-50deg);
     opacity: 0;
   }
   to {

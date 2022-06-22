@@ -8,13 +8,7 @@ function handleClick(event) {
   menuList.classList.toggle("hidden");
   menuButton.classList.toggle("hidden");
   menuButton.classList.toggle("visible");
-  if (menuButton.classList.contains("fullbutton")) {
-    menuButton.classList.remove("fullbutton");
-  } else {
-    setTimeout(() => {
-      menuButton.classList.add("fullbutton");
-    }, 700);
-  }
+  menuButton.classList.toggle("fullbutton");
 }
 
 function closeMenu(event) {
@@ -22,10 +16,7 @@ function closeMenu(event) {
     menuList.classList.add("hidden");
     menuButton.classList.add("hidden");
     menuButton.classList.remove("visible");
-
-    setTimeout(() => {
-      menuButton.classList.add("fullbutton");
-    }, 700);
+    menuButton.classList.add("fullbutton");
   }
 }
 
