@@ -1,0 +1,88 @@
+.contato__text {
+  font-family: "Roboto Mono", monospace;
+}
+
+.contato__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+.contato__form label {
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary);
+}
+
+.contato__form input {
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  background-color: var(--color-secondary);
+}
+
+.contato__form textarea {
+  resize: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 88%;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  background-color: var(--color-secondary);
+}
+
+.contato__form-mensagem {
+  grid-column: 2;
+  grid-row: 1/4;
+}
+
+.contato__form-div,
+.contato__form-mensagem {
+  border: 3px solid var(--shadow-black);
+  box-shadow: 5px 5px var(--shadow-black);
+}
+
+.contato__form input:focus,
+.contato__form textarea:focus {
+  border: 2px solid var(--shadow-black);
+}
+
+@media (max-width: 1100px) {
+  .contato__form {
+    margin-bottom: 4rem;
+  }
+
+  .contato__titulo {
+    font-size: 3rem;
+  }
+
+  .contato__text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contato__form {
+    display: block;
+  }
+
+  .contato__form-div {
+    margin-bottom: 2rem;
+  }
+
+  .contato__form input {
+    font-size: 1.2rem;
+  }
+  .contato__form textarea {
+    height: 200px;
+  }
+}

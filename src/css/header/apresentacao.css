@@ -1,0 +1,90 @@
+.apresentacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.apresentacao__texto-nome {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.apresentacao__img {
+  position: relative;
+}
+
+.apresentacao__img::after {
+  position: absolute;
+  content: url(../../img/apoio/vetor\ fundo\ foto.png);
+  right: -80px;
+  z-index: -1;
+}
+
+.apresentacao__img-img {
+  width: 220px;
+}
+
+@media (max-width: 1100px) {
+  .apresentacao__texto-nome {
+    font-size: 5rem;
+  }
+
+  .apresentacao__texto-descricao {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .apresentacao {
+    margin-top: 4rem;
+  }
+
+  .apresentacao__texto-ola {
+    font-size: 1.5rem;
+  }
+  .apresentacao__texto-nome {
+    font-size: 4rem;
+  }
+
+  .apresentacao__texto-descricao {
+    font-size: 2rem;
+  }
+
+  .apresentacao__img-img {
+    width: 150px;
+  }
+
+  .apresentacao__img::after {
+    right: -100px;
+    top: -50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .apresentacao {
+    display: block;
+    margin-top: 3rem;
+  }
+
+  .apresentacao__texto-ola {
+    font-size: 1rem;
+  }
+  .apresentacao__texto-nome {
+    font-size: 3rem;
+  }
+
+  .apresentacao__texto-descricao {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .apresentacao__img-img {
+    width: 200px;
+  }
+
+  .apresentacao__img::after {
+    right: 0;
+    top: 0;
+  }
+}

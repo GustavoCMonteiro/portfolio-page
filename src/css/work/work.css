@@ -1,0 +1,120 @@
+.work {
+  margin-top: 6rem;
+  background-image: url(../../img/apoio/vetor\ fundo\ work.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-bottom: 6rem;
+}
+
+.work__projeto-left {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.work__projeto-right {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.work__img-img {
+  max-height: 100%;
+  max-width: 100%;
+  border: 3px solid var(--shadow-black);
+  box-shadow: 5px 5px var(--shadow-black);
+}
+
+.work__img-right {
+  grid-column: 2;
+  grid-row: 1/2;
+  justify-self: end;
+}
+
+.work__titulo {
+  margin-bottom: 1rem;
+}
+
+.work__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.work__text-titulo {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.work__text-text {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.work__button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.button-demo,
+.button-repo {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: 0.5rem;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+.button-demo:hover,
+.button-repo:hover {
+  background-color: var(--color-secondary);
+  color: var(--text-color-dark);
+}
+
+@media (max-width: 1100px) {
+  .work {
+    background-image: none;
+  }
+
+  .work__titulo {
+    font-size: 3rem;
+  }
+
+  .work__text-titulo {
+    font-size: 2rem;
+  }
+
+  .work__text-text {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+  .button-demo,
+  .button-repo {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .work {
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .work__projeto-left,
+  .work__projeto-right {
+    display: block;
+  }
+
+  .work__text-titulo {
+    margin-top: 1rem;
+  }
+
+  .button-demo,
+  .button-repo {
+    margin-top: 1rem;
+  }
+}
