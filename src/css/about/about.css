@@ -15,9 +15,33 @@
   font-family: "Roboto Mono", monospace;
   max-width: 800px;
   padding-right: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 5px solid var(--shadow-black);
-  border-right: 5px solid var(--shadow-black);
+  position: relative;
+  /* border-bottom: 5px solid var(--shadow-black);
+  border-right: 5px solid var(--shadow-black); */
+}
+
+.sobre__texto::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  top: 20px;
+  right: -50px;
+  transform: rotate(45deg);
+  margin-left: 1rem;
+  background-color: var(--color-secondary);
+  box-shadow: 0.5rem 0.5rem var(--color-secondary),
+    1rem 1rem var(--color-secondary), 1.5rem 1.5rem var(--color-secondary),
+    2rem 2rem var(--color-secondary), 2.5rem 2.5rem var(--color-secondary),
+    3rem 3rem var(--color-secondary), 3.5rem 3.5rem var(--color-secondary),
+    4rem 4rem var(--color-secondary), 4.5rem 4.5rem var(--color-secondary),
+    5rem 5rem var(--color-secondary), 5.5rem 5.5rem var(--color-secondary),
+    6rem 6rem var(--color-secondary), 6.5rem 6.5rem var(--color-secondary),
+    7rem 7rem var(--color-secondary), 7.5rem 7.5rem var(--color-secondary),
+    8rem 8rem var(--color-secondary), 8.5rem 8.5rem var(--color-secondary),
+    9rem 9rem var(--color-secondary), 9.5rem 9.5rem var(--color-secondary),
+    10rem 10rem var(--color-secondary), 10.5rem 10.5rem var(--color-secondary),
+    11rem 11rem var(--color-secondary);
 }
 
 .sobre__texto p {
@@ -61,6 +85,7 @@
   .sobre__redes-cv:hover {
     background-color: var(--color-secondary);
     color: var(--text-color-dark);
+    box-shadow: 13px 13px var(--shadow-black);
   }
 }
 
@@ -76,6 +101,10 @@
   .sobre__redes {
     font-size: 2rem;
     margin-left: 1rem;
+  }
+
+  .sobre__texto::after {
+    display: none;
   }
 }
 

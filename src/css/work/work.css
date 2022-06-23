@@ -74,6 +74,7 @@
   .button-repo:hover {
     background-color: var(--color-secondary);
     color: var(--text-color-dark);
+    box-shadow: 13px 13px var(--shadow-black);
   }
 }
 
