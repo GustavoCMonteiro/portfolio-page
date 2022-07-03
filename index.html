@@ -65,29 +65,29 @@
     </section>
 
     <section class="skills container-geral" id="skills">
-      <h2 class="skills__titulo font-size-l">Skills</h2>
+      <h2 class="skills__titulo font-size-l" data-anime="titulo">Skills</h2>
       <div class="skills__flex-div">
-        <div class="skills__skill border-shadow">
+        <div class="skills__skill border-shadow" data-anime="skill">
           <img src="src/img/icon/html.png" alt="">
           <span class="skills__skill-texto font-size-s text-color-dark">Html</span>
         </div>
-        <div class="skills__skill border-shadow">
+        <div class="skills__skill border-shadow" data-anime="skill">
           <img src="src/img/icon/css.png" alt="">
           <span class="skills__skill-texto font-size-s text-color-dark">Css</span>
         </div>
-        <div class="skills__skill border-shadow">
+        <div class="skills__skill border-shadow" data-anime="skill">
           <img src="src/img/icon/js.png" alt="">
           <span class="skills__skill-texto font-size-s text-color-dark">JavaScript</span>
         </div>
-        <div class="skills__skill border-shadow">
+        <div class="skills__skill border-shadow" data-anime="skill">
           <img src="src/img/icon/react.png" alt="">
           <span class="skills__skill-texto font-size-s text-color-dark">React</span>
         </div>
-        <div class="skills__skill border-shadow">
+        <div class="skills__skill border-shadow" data-anime="skill">
           <img src="src/img/icon/figma.png" alt="">
           <span class="skills__skill-texto font-size-s text-color-dark">Figma</span>
         </div>
-        <div class="skills__skill border-shadow">
+        <div class="skills__skill border-shadow" data-anime="skill">
           <img src="src/img/icon/photoshop.png" alt="">
           <span class="skills__skill-texto font-size-s text-color-dark">Photoshop</span>
         </div>
@@ -96,9 +96,9 @@
 
     <section class="work" id="work">
       <div class="container-geral">
-        <h2 class="work__titulo font-size-l">Work</h2>
+        <h2 class="work__titulo font-size-l" data-anime="titulo">Work</h2>
 
-        <div class="work__projeto-left">
+        <div class="work__projeto-left" data-anime="work-left">
           <div class="work__img-left">
             <img class="work__img-img" src="src/img/projeto-forca/jogo-forca.gif" alt="">
           </div>
@@ -115,7 +115,7 @@
         </div>
 
 
-        <div class="work__projeto-right">
+        <div class="work__projeto-right" data-anime="work-right">
           <div class="work__img-right">
             <img class="work__img-img" src="src/img/projeto-calc/calculadora.gif" alt="">
           </div>
@@ -131,7 +131,7 @@
           </div>
         </div>
 
-        <div class="work__projeto-left">
+        <div class="work__projeto-left" data-anime="work-left">
           <div class="work__img-left">
             <img class="work__img-img" src="src/img/projeto-audio/audiophile.gif" alt="">
           </div>
@@ -147,7 +147,7 @@
           </div>
         </div>
 
-        <div class="work__projeto-right">
+        <div class="work__projeto-right" data-anime="work-right">
           <div class="work__img-right">
             <img class="work__img-img" src="src/img/projeto-f1/projetof1.gif" alt="">
           </div>
@@ -163,7 +163,7 @@
           </div>
         </div>
 
-        <div class="work__projeto-left">
+        <div class="work__projeto-left" data-anime="work-left">
           <div class="work__img-left">
             <img class="work__img-img" src="src/img/jogo-velha/jogo-velha.gif" alt="">
           </div>
@@ -179,29 +179,50 @@
           </div>
         </div>
 
+        <div class="work__projeto-right" data-anime="work-right">
+          <div class="work__img-right">
+            <img class="work__img-img" src="src/img/projeto-rick/rick.gif" alt="">
+          </div>
+          <div class="work__text">
+            <div>
+              <h3 class="work__text-titulo font-size-m">Projeto Rick and Morty</h3>
+              <p class="work__text-text">Projeto desenvolvido utilizando o React.js, no qual faço requisições a uma API pública do desenho Rick and Morty. Tambem foi utilizado o Tailwind para o css.</p>
+            </div>
+            <div class="work__button-grid">
+              <a class="button-demo border-shadow font-size-s" href="https://gustavocmonteiro.github.io/calculator-js/" target="_blank">Demo</a>
+              <a class="button-repo border-shadow font-size-s" href="https://github.com/GustavoCMonteiro/calculator-js" target="_blank">Repositório</a>
+            </div>
+          </div>
+        </div>
+
+
       </div>
 
     </section>
 
-    <section class="contato container-geral" id="contact">
+    <section class="contato container-geral" id="contact" data-anime="titulo">
       <h2 class="contato__titulo font-size-l">Contact</h2>
       <p class="contato__text font-size-x">Preencha o formulário abaixo que entrarei em contato.</p>
+      <p class="contato__text-aviso">* Formulário apenas ilustrativo, contatos estão no curriculo.</p>
       <form action="" class="contato__form">
         <div class="contato__form-div">
           <label for="name">Nome</label>
-          <input type="text" id="name">
+          <input type="text" id="name" required>
         </div>
         <div class="contato__form-div">
           <label for="email">Email</label>
-          <input type="text" id="email">
+          <input type="email" id="email" required>
         </div>
         <div class="contato__form-div">
           <label for="assunto">Assunto</label>
-          <input type="text" id="assunto">
+          <input type="text" id="assunto" required>
         </div>
         <div class="contato__form-mensagem">
           <label for="mensagem">Mensagem</label>
-          <textarea name="mensagem" id="mensagem"></textarea>
+          <textarea name="mensagem" id="mensagem" required></textarea>
+        </div>
+        <div class="contato__form-button">
+          <button class="border-shadow font-size-s">Enviar</button>
         </div>
       </form>
     </section>

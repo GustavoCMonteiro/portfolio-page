@@ -1,0 +1,48 @@
+.scroll-right {
+  animation: scrollRight 0.7s forwards;
+}
+
+.scroll-left {
+  animation: scrollLeft 0.7s forwards;
+}
+
+.scroll-down {
+  animation: scrollDown 0.7s forwards;
+}
+
+[data-anime] {
+  opacity: 0;
+}
+
+@keyframes scrollRight {
+  from {
+    transform: translate3d(-100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes scrollLeft {
+  from {
+    transform: translate3d(+100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes scrollDown {
+  from {
+    transform: translate3d(0, +100px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

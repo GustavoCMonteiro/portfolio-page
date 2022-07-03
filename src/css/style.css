@@ -1,8 +1,12 @@
+@import "./globais/reset.css";
 @import "./globais/global.css";
+@import "./globais/animaçoes.css";
+
 @import "./header/header.css";
+@import "./header/menu-mobile.css";
 @import "./header/apresentacao.css";
+
 @import "./about/about.css";
 @import "./skills/skills.css";
 @import "./work/work.css";
 @import "./contato/contato.css";
-@import "./header/menu-mobile.css";
